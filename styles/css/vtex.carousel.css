@@ -1,0 +1,11 @@
+/* -----------------------------------------------------------------------------
+  ESTILIZAÇÃO DO CARROSSEL
+  
+-----------*/
+.containerImg {
+    background-color: #756f6f;
+  }
+  
+  .containerImg .img {
+    max-width: 1520px;
+  }

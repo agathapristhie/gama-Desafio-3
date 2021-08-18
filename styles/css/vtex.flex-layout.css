@@ -1,0 +1,16 @@
+/* -----------------------------------------------------------------------------
+  ESTILIZAÇÃO DO HEADER
+  
+----------------------------------------------------------------------------- */
+.flexRowContent--headerClass{
+  background-color: #212121;
+}
+
+.flexRowContent--main-header-mobile{
+  background-color: #212121;
+}
+
+/*flexColChild
+flexCol
+flexRowContent
+flexRow*/

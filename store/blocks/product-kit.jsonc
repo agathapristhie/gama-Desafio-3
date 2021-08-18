@@ -1,0 +1,22 @@
+{
+    "product-kit": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props":{
+      "showArrows": true,
+      "nextArrow": "next",
+      "prevArrow": "prev",
+      "showDots": true,
+      "dots": "dots",
+      "showListPrice": true,
+      "showLabel": true,
+      "showInstallments": true,
+      "showBadge": true,
+      "badgeText": "badge",
+      "showCollections": true,
+      "allowSwap": true,
+      "allowRemoval": true
+    }
+  }
+}
