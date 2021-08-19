@@ -1,117 +1,61 @@
   {
     "store.home": {
       "blocks": [ 
-        "tab-layout#home",
-        "slider-layout#home",
-        "shelf#home"]
+        "tab-layout#home", //menu        
+        "shelf#home"] //prateleira de produtos
     },
-
   
-    "tab-layout#home": {
-    "children": [
-      "tab-list#home",
-      "tab-content#home"
-    ],
-    "props": {
-      "blockClass": "home",
-      "defaultActiveTabId": "home1"
-    }
-  },
-  "tab-list#home": {
-    "children": [
-      "tab-list.item#home1",
-      "tab-list.item#home2",
-      "tab-list.item#home3",
-      "tab-list.item#home4",
-      "tab-list.item#home5"
-    ]
-  },
-  "tab-list.item#home1": {
-    "props": {
-      "tabId": "home1",
-      "label": "Promoção",
-      "defaultActiveTab": true
-    }
-  },
-  "tab-list.item#home2": {
-    "props": {
-      "tabId": "home2",
-      "label": "Corinthians"
-    }
-  },
-  "tab-list.item#home3": {
-    "props": {
-      "tabId": "home3",
-      "label": "Signos"
-    }
-  },
-  "tab-list.item#home4": {
-    "props": {
-      "tabId": "home4",
-      "label": "7Maravilhas"
-    }
-  },
-  "tab-list.item#home5": {
-    "props": {
-      "tabId": "home5",
-      "label": "Guerreiros"
-    }
-  },
-  "tab-content#home": {
-       "children": [
-         "tab-content.item#home1",
-         "tab-content.item#home2",
-         "tab-content.item#home3",
-         "tab-content.item#home4",
-         "tab-content.item#home5"
-       ]
-     },
-     "tab-content.item#home1": {
-       "props": {
-         "tabId": "home1",
-         "blockClass":"home"
-       }
-     },
-     "tab-content.item#home2": {
-       "props": {
-         "tabId": "home2",
-         "blockClass":"home"
-       }
-     },
-     "tab-content.item#home3": {
-      "props": {
-        "tabId": "home3",
-        "blockClass":"home"
+    
+    //Slider dos eventos principais
+
+    "slider-layout#home": {
+      "children": [
+        "image#banner1",
+        "image#banner2"
+      ],
+          "props": {
+             "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "blockClass": "carousel"
+          }
+    },
+  //Imagens obtidas no site upmedal.com
+
+    "image#banner1":{
+      "props":{
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T224625Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7b9491a5e7a76c28734610a91ef397e77a6d2e7f83948156ccaea9b41c6a39b7",
+      "alt": "Maratona Virtual 01",
+      "height": 250
       }
     },
-    "tab-content.item#home4": {
-      "props": {
-        "tabId": "home4",
-        "blockClass":"home"
-      }
-    },
-    "tab-content.item#home5": {
-      "props": {
-        "tabId": "home5",
-        "blockClass":"home"
+    "image#banner2":{
+      "props":{
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T224625Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12d656f0f801f535ed47689f034ad4c092e811051d5ecb94dbdd2b4d4c36e708",
+      "alt": "Maratona Virtual 02",
+      "height": 250
       }
     },
 
     "shelf#home": {
       "blocks": ["product-summary.shelf"],
       "props":{
-        "orderBy": "OrderByReleaseDateDESC",
+        "orderBy": "OrderByReleaseDateDESC", // produtos ordenados do mais novo para o mais antigo
       "productList": {
         "maxItems": 9,
-        "itemsPerPage": 3,
+        "itemsPerPage": 3,     //quantidade de itens a serem exibidos na prateleira
         "minItemsPerPage": 1.5,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Destaques"
+        "titleText": "Novidades"
      }
     }
     },
-    "product-summary.shelf": {
+    "product-summary.shelf": { //prateleira com todos os produtos da loja
       "children": [
         "product-summary-name",
         "product-summary-description",

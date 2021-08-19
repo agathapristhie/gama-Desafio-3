@@ -1,0 +1,18 @@
+/* -----------------------------------------------------------------------------
+  ESTILIZAÇÃO DA SEARCH BAR
+  
+----------------------------------------------------------------------------- */
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: none;
+    border-radius: 0;
+    border-bottom: thin solid #59ff00;
+}
+
+.searchBarContainer :global(.vtex-input__suffix){
+    background: transparent;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+    background: transparent;
+    color: #59ff00;
+}

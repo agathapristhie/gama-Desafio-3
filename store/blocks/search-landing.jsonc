@@ -1,35 +1,110 @@
 
     {
         "store.custom#landing": { 
-          "blocks": ["image#landing", "search-result-layout.customQuery"]
+          "blocks": ["tab-layout#home", //menu        
+            "shelf#home"]
         },
-        "image#landing": { 
-          "props": { 
-            "minWidth": "100%",
-            "src": "https://user-images.githubusercontent.com/18701182/69889938-64b16180-12d2-11ea-8d8a-e3089cbeaffd.png"
-          }
+        
+        "search-result-layout.customQuery#home1": {
+          "props": {
+            "querySchema": {
+              "orderByField": "OrderByTopSaleDESC",
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 3,
+              "queryField": "",
+              "mapField": "ft"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#home",
+            "search-result-layout.mobile#home",
+            "search-not-found-layout#home"
+          ]
         },
-        "search-result-layout.customQuery": {
+        
+        "search-result-layout.customQuery#home2": {
           "props": {
             "querySchema": {
               "orderByField": "OrderByReleaseDateDESC",
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "Blue Top Retro Camera",
+              "queryField": "Corinthians",
               "mapField": "ft"
             }
           },
           "blocks": [
-            "search-result-layout.desktop",
-            "search-result-layout.mobile",
-            "search-not-found-layout"
+            "search-result-layout.desktop#home",
+            "search-result-layout.mobile#home",
+            "search-not-found-layout#home"
           ]
         },
-        "search-result-layout.desktop": {
+        "search-result-layout.customQuery#home3": {
+          "props": {
+            "querySchema": {
+              "orderByField": "OrderByReleaseDateDESC",
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 8,
+              "queryField": "Palmeiras",
+              "mapField": "ft"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#home",
+            "search-result-layout.mobile#home",
+            "search-not-found-layout#home"
+          ]
+        },
+        "search-result-layout.customQuery#home4": {
+          "props": {
+            "querySchema": {
+              "orderByField": "OrderByReleaseDateDESC",
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 8,
+              "queryField": "Signos",
+              "mapField": "ft"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#home",
+            "search-result-layout.mobile#home",
+            "search-not-found-layout#home"
+          ]
+        },
+        "search-result-layout.customQuery#home5": {
+          "props": {
+            "querySchema": {
+              "orderByField": "OrderByReleaseDateDESC",
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 8,
+              "queryField": "7Maravilhas",
+              "mapField": "ft"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#home",
+            "search-result-layout.mobile#home",
+            "search-not-found-layout#home"
+          ]
+        },
+        "search-result-layout.customQuery#home6": {
+          "props": {
+            "querySchema": {
+              "orderByField": "OrderByReleaseDateDESC",
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 8,
+              "queryField": "Guerreiros",
+              "mapField": "ft"
+            }
+          },
+          "blocks": [
+            "search-result-layout.desktop#home",
+            "search-result-layout.mobile#home",
+            "search-not-found-layout#home"
+          ]
+        },
+        "search-result-layout.desktop#home": {
           "children": [
             "breadcrumb.search",
-            "search-title.v2",
-            "flex-layout.row#top",
             "search-fetch-previous",
             "flex-layout.row#results",
             "search-fetch-more"
@@ -39,36 +114,37 @@
             "preventRouteChange": true
           }
         },
-        "flex-layout.row#top": { 
-          "children": [
-            "total-products.v2",
-            "order-by.v2"
-          ]
-        },
+        
         "flex-layout.row#results": { 
           "children": [ 
-            "flex-layout.col#filter",
             "flex-layout.col#search"
           ]
         },
-        "flex-layout.col#filter": { 
-          "props": {
-            "width": "20%"
-          },
-          "children": [
-            "filter-navigator.v3"
-          ]
-        },
+        
         "flex-layout.col#search": { 
           "children": [
             "search-content"
           ]
+          
         },
         "search-content": { 
           "blocks": ["gallery", "not-found"]
         },
         "gallery": {
           "blocks": ["product-summary.shelf"]
-        }
+        },
+
+        "search-result-layout.mobile#home": {
+          "children": [
+            "breadcrumb.search",
+            "flex-layout.row#results"
+          ]
+        },
+
+          "search-not-found-layout#home": {
+            "children": [
+              "breadcrumb.search"
+            ]
+          }
       
 }

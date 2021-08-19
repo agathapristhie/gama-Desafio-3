@@ -1,7 +1,7 @@
 {
   "vendor": "hiringcoders2021",
   "name": "desafioupmedalpriscilappdv",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.1-beta.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "vtex.store": "2.x",
-    "hiringcoders2021.upmedalpriapp": "1.x",
+    "hiringcoders2021.upmedalpriapp": "3.0.0-beta.1",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
     "vtex.store-footer": "2.x",

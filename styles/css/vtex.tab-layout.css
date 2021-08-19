@@ -4,8 +4,16 @@
 ----------------------------------------------------------------------------- */
 .container{
     background-color:#212121;
+    border: 0;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
 }
-
 
 /* container
 contentContainer
