@@ -3,7 +3,7 @@
     "tab-layout#home": {
         "children": [
           "tab-list#home",
-          "slider-layout#home", //carrossel com imagens em destaque
+          "slider-layout#home",
           "tab-content#home"
         ],
         "props": {

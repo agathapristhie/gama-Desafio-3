@@ -1,8 +1,8 @@
   {
     "store.home": {
       "blocks": [ 
-        "tab-layout#home", //menu        
-        "shelf#home"] //prateleira de produtos
+        "tab-layout#home", //o tab-layout foi incluído em tab-layout.jsonc - menu com as categorias de produtos
+        "shelf#home"] //prateleira de produtos "mais novos", selecionados através de uma custom query
     },
   
     
@@ -28,21 +28,21 @@
 
     "image#banner1":{
       "props":{
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T224625Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7b9491a5e7a76c28734610a91ef397e77a6d2e7f83948156ccaea9b41c6a39b7",
+      "src": "https://desafio3-gama-academy-pri-upmedal.s3.sa-east-1.amazonaws.com/BANNER-WOOD.png",
       "alt": "Maratona Virtual 01",
       "height": 250
       }
     },
     "image#banner2":{
       "props":{
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T224625Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12d656f0f801f535ed47689f034ad4c092e811051d5ecb94dbdd2b4d4c36e708",
+      "src": "https://desafio3-gama-academy-pri-upmedal.s3.sa-east-1.amazonaws.com/W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png",
       "alt": "Maratona Virtual 02",
       "height": 250
       }
     },
 
     "shelf#home": {
-      "blocks": ["product-summary.shelf"],
+      "blocks": ["product-summary.shelf", "detailsButton"],
       "props":{
         "orderBy": "OrderByReleaseDateDESC", // produtos ordenados do mais novo para o mais antigo
       "productList": {
@@ -57,21 +57,35 @@
     },
     "product-summary.shelf": { //prateleira com todos os produtos da loja
       "children": [
-        "product-summary-name",
-        "product-summary-description",
         "product-summary-image",
+        "product-summary-name",
+        "product-summary-attachment-list",
+        "product-summary-space",
+        "product-summary-column#1",
+        "detailsButton"
+      ]
+    },
+    "product-summary-column#1": {
+      "children": [
         "product-summary-price",
-        "product-summary-sku-selector",
         "product-summary-buy-button"
       ]
     },
-    "product-summary-image": {
-         "props": {
-           "width": 350
-         }
-       }
-    
+    "product-summary.unstable--flex": {
+      "children": [
+        "product-summary-image",
+        "product-summary-name",
+        "product-summary-attachment-list",
+        "product-summary-space",
+        "unstable--product-summary-column#1"
+      ]
+    },
+    "unstable--product-summary-column#1": {
+      "children": [
+        "product-summary-price",
+        "product-summary-buy-button"
+      ]
+    }
+  }
 
-
-}
   

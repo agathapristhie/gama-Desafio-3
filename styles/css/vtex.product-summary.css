@@ -1,0 +1,11 @@
+.buyButtonText{
+    background-color: #59ff00;
+    color: #212121;
+}
+.buyButtonContainer :global(.vtex-button){
+    border: none;
+    border-radius: 0.5rem;
+    background-color:#59ff00;
+
+}
+

@@ -16,6 +16,7 @@
   "flex-layout.row#footer-desktop": {
     "children": [
       "social-networks",
+      "login",
       "whatsappComp",
       "accepted-payment-methods"
     ]

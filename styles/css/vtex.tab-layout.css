@@ -15,6 +15,24 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+.listContainer{
+  background-color:#212121;
+  font: 400 13.3333px Arial
+}
+
+.listItem :global(.vtex-button){
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  border-bottom: thin solid #59ff00;
+  
+}
+
+.listItem :focus{
+  color: #59ff00;
+ }
+
 /* container
 contentContainer
 contentItem
