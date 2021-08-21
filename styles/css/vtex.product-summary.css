@@ -1,3 +1,8 @@
+/* -----------------------------------------------------------------------------
+  ESTILIZAÇÃO DO BOTÃO COMPRAR - PRODUCT SUMMARY
+  
+----------------------------------------------------------------------------- */
+
 .buyButtonText{
     background-color: #59ff00;
     color: #212121;
@@ -9,3 +14,10 @@
 
 }
 
+.container{
+  background-color: #424242;
+}
+
+.nameContainer{
+  background-color: #424242
+}

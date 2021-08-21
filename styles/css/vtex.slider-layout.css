@@ -5,6 +5,8 @@
 
 .sliderLayoutContainer {
     justify-content: center;
+    position: relative;
+    z-index: 100
   }
   .sliderLayoutContainer--carousel {
     background-color: #303030; /* Atualizando a cor do background do carousel*/

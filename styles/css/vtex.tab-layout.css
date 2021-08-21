@@ -17,7 +17,8 @@
 
 .listContainer{
   background-color:#212121;
-  font: 400 13.3333px Arial
+  font: 400 13.3333px Arial;
+  width: 100%;
 }
 
 .listItem :global(.vtex-button){
@@ -26,12 +27,15 @@
   border: none;
   border-radius: 0;
   border-bottom: thin solid #59ff00;
+  height: 50px;
+  width: 150px
   
 }
 
 .listItem :focus{
   color: #59ff00;
  }
+
 
 /* container
 contentContainer

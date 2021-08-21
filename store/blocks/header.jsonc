@@ -22,7 +22,7 @@
     "props": {
         "blockClass": "headerClass"
     },
-    "children": ["flex-layout.row#desktop1" ]
+    "children": ["flex-layout.row#desktop1"]
     },
   "flex-layout.row#desktop1": {
     "props": {
@@ -43,7 +43,6 @@
     ]
   },
  
-
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"

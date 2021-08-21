@@ -5,7 +5,7 @@
           "tab-list#home",
           "slider-layout#home",
           "tab-content#home"
-        ],
+         ],
         "props": {
           "blockClass": "home",
           "defaultActiveTabId": "home1"
@@ -24,7 +24,7 @@
       "tab-list.item#home1": {
         "props": {
           "tabId": "home1",
-          "label": "Promoção",
+          "label": "Signos",
           "defaultActiveTab": true
         }
       },
@@ -43,7 +43,7 @@
       "tab-list.item#home4": {
         "props": {
           "tabId": "home4",
-          "label": "Signos"
+          "label": "Divertidos"
         }
       },
       "tab-list.item#home5": {

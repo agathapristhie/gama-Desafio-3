@@ -1,8 +1,8 @@
   {
     "store.home": {
       "blocks": [ 
-        "tab-layout#home", //o tab-layout foi incluído em tab-layout.jsonc - menu com as categorias de produtos
-        "shelf#home"] //prateleira de produtos "mais novos", selecionados através de uma custom query
+        "tab-layout#home",
+         "shelf#home"] //prateleira de produtos "mais novos", selecionados através de uma custom query
     },
   
     
@@ -42,7 +42,7 @@
     },
 
     "shelf#home": {
-      "blocks": ["product-summary.shelf", "detailsButton"],
+      "blocks": ["product-summary.shelf"],
       "props":{
         "orderBy": "OrderByReleaseDateDESC", // produtos ordenados do mais novo para o mais antigo
       "productList": {
@@ -57,33 +57,44 @@
     },
     "product-summary.shelf": { //prateleira com todos os produtos da loja
       "children": [
-        "product-summary-image",
         "product-summary-name",
+        "product-summary-image",
+        "product-summary-sku-selector",        
         "product-summary-attachment-list",
-        "product-summary-space",
-        "product-summary-column#1",
-        "detailsButton"
+        "product-summary-column#1"
       ]
+    },
+    "product-summary-image": {
+      "props": {
+        "showBadge": true,
+        "height": 220
+      }
     },
     "product-summary-column#1": {
       "children": [
         "product-summary-price",
-        "product-summary-buy-button"
+        "detailsButton" //botão customizado na aplicação (só funciona com produtos com detalhes cadastrados)
       ]
+    },
+    "product-summary-sku-selector": {
+      "props":{
+        "showVariationsLabels": ["false"],
+        "visibility":"always"
+      }
     },
     "product-summary.unstable--flex": {
       "children": [
-        "product-summary-image",
         "product-summary-name",
+        "product-summary-image",
+        "product-summary-sku-selector",
         "product-summary-attachment-list",
-        "product-summary-space",
         "unstable--product-summary-column#1"
       ]
     },
     "unstable--product-summary-column#1": {
       "children": [
         "product-summary-price",
-        "product-summary-buy-button"
+        "detailsButton" //botão customizado na aplicação (só funciona com produtos com detalhes cadastrados)
       ]
     }
   }

@@ -1,5 +1,5 @@
 /* -----------------------------------------------------------------------------
-  ESTILIZAÇÃO DO HEADER
+  ESTILIZAÇÃO DO FLEX-LAYOUT DO NO CABEÇALHO
   
 ----------------------------------------------------------------------------- */
 .flexRowContent--headerClass{
@@ -9,6 +9,7 @@
 .flexRowContent--main-header-mobile{
   background-color: #212121;
 }
+
 
 /*flexColChild
 flexCol
