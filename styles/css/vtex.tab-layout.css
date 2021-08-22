@@ -17,7 +17,15 @@
 
 .listContainer{
   background-color:#212121;
-  font: 400 13.3333px Arial;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  min-height: 48px;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  line-height: 1.75;
+  white-space: normal;
+  text-transform: uppercase;
   width: 100%;
 }
 

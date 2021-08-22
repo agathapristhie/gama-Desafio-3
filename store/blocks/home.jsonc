@@ -54,49 +54,8 @@
         "titleText": "Novidades"
      }
     }
-    },
-    "product-summary.shelf": { //prateleira com todos os produtos da loja
-      "children": [
-        "product-summary-name",
-        "product-summary-image",
-        "product-summary-sku-selector",        
-        "product-summary-attachment-list",
-        "product-summary-column#1"
-      ]
-    },
-    "product-summary-image": {
-      "props": {
-        "showBadge": true,
-        "height": 220
-      }
-    },
-    "product-summary-column#1": {
-      "children": [
-        "product-summary-price",
-        "detailsButton" //botão customizado na aplicação (só funciona com produtos com detalhes cadastrados)
-      ]
-    },
-    "product-summary-sku-selector": {
-      "props":{
-        "showVariationsLabels": ["false"],
-        "visibility":"always"
-      }
-    },
-    "product-summary.unstable--flex": {
-      "children": [
-        "product-summary-name",
-        "product-summary-image",
-        "product-summary-sku-selector",
-        "product-summary-attachment-list",
-        "unstable--product-summary-column#1"
-      ]
-    },
-    "unstable--product-summary-column#1": {
-      "children": [
-        "product-summary-price",
-        "detailsButton" //botão customizado na aplicação (só funciona com produtos com detalhes cadastrados)
-      ]
     }
+   
   }
 
   

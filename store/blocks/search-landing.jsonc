@@ -12,7 +12,7 @@
               "orderByField": "OrderByTopSaleDESC",
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "Aquário",
+              "queryField": "Combos",
               "mapField": "ft"
             }
           },
@@ -61,7 +61,7 @@
               "orderByField": "OrderByReleaseDateDESC",
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "Wood",
+              "queryField": "Corrida",
               "mapField": "ft"
             }
           },
@@ -133,7 +133,21 @@
           "blocks": ["gallery", "not-found"]
         },
         "gallery": {
-          "blocks": ["product-summary.shelf"]
+          "props": {
+            "layouts": [
+              {
+                "name": "grid",
+                "component": "GridSummary",
+                "itemsPerRow": {
+                  "(min-width:1300px)": 2,
+                  "desktop": 2,
+                  "tablet": 2,
+                  "phone": 1
+                }
+              }
+            ],
+            "GridSummary": "product-summary.shelf"
+          }
         },
         
 

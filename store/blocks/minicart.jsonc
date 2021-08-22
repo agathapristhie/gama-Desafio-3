@@ -13,7 +13,7 @@
     "children": ["flex-layout.col#minicart-footer"]
   },
   "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary#example", "minicart-checkout-button"]
+    "children": ["minicart-summary", "minicart-checkout-button"]
   },
   "minicart-product-list": {
     "blocks": ["product-list#minicart"]

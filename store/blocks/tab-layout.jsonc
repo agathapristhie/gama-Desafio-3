@@ -24,7 +24,7 @@
       "tab-list.item#home1": {
         "props": {
           "tabId": "home1",
-          "label": "Signos",
+          "label": "Combos",
           "defaultActiveTab": true
         }
       },
@@ -43,7 +43,7 @@
       "tab-list.item#home4": {
         "props": {
           "tabId": "home4",
-          "label": "Divertidos"
+          "label": "Corrida"
         }
       },
       "tab-list.item#home5": {
@@ -68,7 +68,7 @@
              "tab-content.item#home6"
            ]
          },
-         "tab-content.item#home1": {
+         "tab-content.item#home1": { //vide search-landing.jsonc
            "children":["search-result-layout.customQuery#home1"],
            "props": {
              "tabId": "home1",

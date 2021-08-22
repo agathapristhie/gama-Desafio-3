@@ -1,0 +1,5 @@
+{
+    "minicart-summary": {
+      "blocks": ["checkout-summary.compact"]
+    }
+  }

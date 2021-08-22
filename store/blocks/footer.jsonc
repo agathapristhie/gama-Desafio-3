@@ -24,6 +24,7 @@
   "flex-layout.row#footer-mobile": {
     "children": [
       "social-networks",
+      "login",
       "whatsappComp",
       "accepted-payment-methods"
     ]

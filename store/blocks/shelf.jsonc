@@ -1,0 +1,133 @@
+{
+    "product-summary.shelf": { //prateleira com todos os produtos da loja
+    "children": [
+      "product-summary-column#1",
+      "modal-trigger#playvideo",
+      "product-images#landing",
+      "vtex.product-highlights@2.x:product-highlights",        
+      "product-summary-attachment-list",
+      "product-summary-column#2"
+    ]
+  },
+
+  "product-summary-column#1": {
+    "children": [
+      "product-summary-name",
+      "product-rating-inline"
+    ]
+  },
+ 
+  "product-summary-column#2": {
+    "children": [
+      "product-summary-price",
+      "detailsButton" //botão customizado na aplicação upmedalpriapp
+    ]
+  },
+  "product-summary-sku-selector": {
+    "props":{
+      "showVariationsLabels": ["false"],
+      "visibility":"always"
+    }
+  },
+  "product-summary.unstable--flex": {
+    "children": [
+      "unstable--product-summary-column#2",
+      "modal-trigger#playvideo",
+      "product-images#landing",
+      "sku-selector",
+      "vtex.product-highlights@2.x:product-highlights",
+      "product-summary-attachment-list",
+      "unstable--product-summary-column#2"
+    ]
+  },
+  "product-images#landing": {
+    "props": {
+      "showNavigationArrows": true,
+      "showPaginationDots":true,
+      "thumbnailsOrientation": "horizontal",
+      "blockClass": "landing"
+    }
+  },
+  "sku-selector": {
+    "props": {
+      "hideImpossibleCombinations": false
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights": {
+    "children": ["product-highlight-wrapper#1", "product-highlight-wrapper#2"]
+  },
+  "product-highlight-wrapper#1": {
+    "props":{
+      "blockClass": "launch"
+    },
+    "children": [
+      "product-highlight-text#1"
+    ]
+  },
+  
+  "product-highlight-text#1": {
+    "props": {
+      "message": "PRÉ-LANÇAMENTO",
+      "blockClass": "launch"
+    }
+  },
+
+  "product-highlight-wrapper#2": {
+    "props":{
+      "blockClass": "validation"
+    },
+    "children": [
+      "product-highlight-text#2"
+    ]
+  },
+
+  "product-highlight-text#2": {
+    "props": {
+      "message": "VALIDAÇÃO A PARTIR DE 09/10/2021",
+      "blockClass": "validation"
+    }
+  },
+
+  "unstable--product-summary-column#1": {
+    "children": [
+      "product-summary-name",
+      "product-rating-inline"
+    ]
+  },
+  
+  "unstable--product-summary-column#2": {
+    "children": [
+      "product-summary-price",
+      "detailsButton" //botão customizado na aplicação upmedalpriapp
+      ]
+  },
+  "modal-trigger#playvideo": {
+    "children": [
+      "image#playvideo",
+      "modal-layout#playvideo"
+    ]
+  },
+  "modal-layout#playvideo": {
+    "children": [
+      "video#background"
+    ]
+  },
+  "image#playvideo": {
+    "props": {
+      "src": "assets/iconeplay.png", // 
+      "width": 40,
+      "height": 40
+    }
+  },
+  "video#background": {
+    "props": {
+      "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=vVNF4OASRDI",
+      "blockClass": "videoEl"
+    }
+  }
+}

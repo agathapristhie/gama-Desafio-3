@@ -16,8 +16,27 @@
 
 .container{
   background-color: #424242;
+  width: 100%; 
+  margin-left: auto;
+  margin-right: auto;  
 }
 
 .nameContainer{
-  background-color: #424242
+  background-color: #424242;
+  color:#59ff00;
+  display: flex;
+  justify-content:center;
+  font-size: 1.25rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.productBrand{
+  color:#fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.6;
 }

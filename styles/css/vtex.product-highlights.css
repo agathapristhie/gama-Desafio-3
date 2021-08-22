@@ -1,0 +1,40 @@
+/* -----------------------------------------------------------------------------
+  ESTILIZAÇÃO DO TEXTO EM DESTAQUE DOS PRODUTOS
+  
+----------------------------------------------------------------------------- */
+
+.productHighlightText {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.productHighlightText::before {
+    box-sizing: inherit;
+}
+
+.productHighlightText::after {
+    box-sizing: inherit;
+}
+
+.productHighlightWrapper--launch{
+    background-color: #59ff00;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.productHighlightWrapper--validation{
+    background-color: #000;
+    color: #59ff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
