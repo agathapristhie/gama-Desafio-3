@@ -6,6 +6,10 @@ Segue vídeo do Sistema funcionando no workspace de desenvolvimento e os bastido
 
 https://youtu.be/ozZ41cgQkd8
 
+Vídeo resumido com áudio:
+
+https://youtu.be/1puGQNZHm0A
+
 Foram utilizados os seguintes recursos:
 
 * Markdown + css para formatação
