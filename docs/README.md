@@ -2,6 +2,10 @@
 
 Solução criada a partir do minimum boiler template padrão da Vtex IO
 
+Segue vídeo do Sistema funcionando no workspace de desenvolvimento e os bastidores da programação:
+
+https://youtu.be/ozZ41cgQkd8
+
 Foram utilizados os seguintes recursos:
 
 * Markdown + css para formatação
