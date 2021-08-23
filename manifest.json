@@ -1,7 +1,7 @@
 {
   "vendor": "hiringcoders2021",
   "name": "desafioupmedalpriscilappdv",
-  "version": "3.0.4-beta.0",
+  "version": "3.0.5-beta.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
