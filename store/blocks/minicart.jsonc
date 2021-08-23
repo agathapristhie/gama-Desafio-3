@@ -1,6 +1,6 @@
 {
   "minicart.v2": {
-    "children": ["minicart-base-content"]
+    "children": ["minicart-base-content"] //página padrão do carrinho
   },
   "minicart-base-content": {
     "blocks": ["minicart-empty-state"],

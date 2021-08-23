@@ -40,6 +40,19 @@
   
 }
 
+.listItem--leadLanding {
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  border-bottom:0;
+  height: 50px;
+  width: 150px
+  
+}
+
+
+
 .listItem :focus{
   color: #59ff00;
  }

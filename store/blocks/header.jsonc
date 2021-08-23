@@ -42,6 +42,8 @@
       "minicart.v2"     //minicart adicionado ao header - vide arquivos minicart.jsonc e vtex.minicard.css
     ]
   },
+
+  
  
   "flex-layout.col#spacer": {
     "props": {

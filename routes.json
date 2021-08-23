@@ -1,5 +1,9 @@
 {
     "store.custom#landing": {
     "path": "/landing"
+  },
+
+  "store.custom#leadLanding": {
+    "path": "/leadLanding"
   }
 }

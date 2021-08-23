@@ -1,5 +1,6 @@
 {
     "product-summary.shelf": { //prateleira com todos os produtos da loja
+                                //página customizada com itens extras para ser semelhante a página original
     "children": [
       "product-summary-column#1",
       "modal-trigger#playvideo",

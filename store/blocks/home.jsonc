@@ -2,7 +2,8 @@
     "store.home": {
       "blocks": [ 
         "tab-layout#home",
-         "shelf#home"] //prateleira de produtos "mais novos", selecionados através de uma custom query
+         "shelf#home",//prateleira de produtos "mais novos", selecionados através de uma custom query
+         "tab-layout#win12"] 
     },
   
     

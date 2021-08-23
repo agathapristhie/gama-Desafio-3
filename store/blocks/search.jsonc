@@ -1,5 +1,5 @@
 {
-    "store.search": {
+    "store.search": { //página padrão de busca
       "blocks": ["search-result-layout"]
     },
     "search-result-layout": {

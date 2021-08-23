@@ -9,10 +9,10 @@
         "search-result-layout.customQuery#home1": {
           "props": {
             "querySchema": {
-              "orderByField": "OrderByTopSaleDESC",
+              "orderByField": "OrderByBestDiscountDESC",
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "Combos",
+              "queryField": "UpMedal",
               "mapField": "ft"
             }
           },
@@ -61,7 +61,7 @@
               "orderByField": "OrderByReleaseDateDESC",
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "Corrida",
+              "queryField": "signos",
               "mapField": "ft"
             }
           },
@@ -77,7 +77,7 @@
               "orderByField": "OrderByReleaseDateDESC",
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "King",
+              "queryField": "Combos",
               "mapField": "ft"
             }
           },
@@ -93,7 +93,7 @@
               "orderByField": "OrderByReleaseDateDESC",
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "Arqueiro",
+              "queryField": "guerreiros",
               "mapField": "ft"
             }
           },

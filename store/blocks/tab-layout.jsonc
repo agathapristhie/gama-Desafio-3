@@ -11,6 +11,20 @@
           "defaultActiveTabId": "home1"
         }
       },
+      "tab-layout#win12": {
+        "children": [
+          "tab-list#leadLanding",
+          "tab-content#leadLanding"
+         ],
+        "props": {
+          "blockClass": "leadLanding",
+          "defaultActiveTabId": "leadLanding"
+        }
+      },
+      "tab-list#leadLanding": {
+        "children": [
+          "tab-list.item#leadLanding"]
+        },
       "tab-list#home": {
         "children": [
           "tab-list.item#home1",
@@ -21,10 +35,19 @@
           "tab-list.item#home6"
         ]
       },
+
+      "tab-list.item#leadLanding": {
+        "props": {
+          "tabId": "leadLanding",
+          "label": "Ganhe 12 reais!",
+          "defaultActiveTab": false
+        }
+      },
+
       "tab-list.item#home1": {
         "props": {
           "tabId": "home1",
-          "label": "Combos",
+          "label": "Promoção",
           "defaultActiveTab": true
         }
       },
@@ -43,13 +66,13 @@
       "tab-list.item#home4": {
         "props": {
           "tabId": "home4",
-          "label": "Corrida"
+          "label": "Signos"
         }
       },
       "tab-list.item#home5": {
         "props": {
           "tabId": "home5",
-          "label": "7Maravilhas"
+          "label": "Combos"
         }
       },
       "tab-list.item#home6": {
@@ -58,6 +81,8 @@
           "label": "Guerreiros"
         }
       },
+      "tab-content#leadLanding":{"children": [
+        "tab-content.item#leadLanding"]},
       "tab-content#home": {
            "children": [
              "tab-content.item#home1",
@@ -67,6 +92,13 @@
              "tab-content.item#home5",
              "tab-content.item#home6"
            ]
+         },
+         "tab-content.item#leadLanding":{
+          "children":["leadForm"],
+          "props": {
+            "tabId": "leadLanding",
+            "blockClass":"leadLanding"
+          }
          },
          "tab-content.item#home1": { //vide search-landing.jsonc
            "children":["search-result-layout.customQuery#home1"],

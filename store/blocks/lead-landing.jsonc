@@ -1,0 +1,10 @@
+{
+"store.custom#leadLanding": { // após clicar em um ganhe 12 reais no header, o usuário é direcionado para 
+    // a landing que só possui o formulário com o component criado em react e os dados são salvos na 
+    //api gateway da AWS
+"blocks": [ 
+    "tab-content#leadLanding",   
+"leadForm"]
+}
+
+}

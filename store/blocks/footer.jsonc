@@ -29,6 +29,12 @@
       "accepted-payment-methods"
     ]
   },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "logInButtonBehavior": "link"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [

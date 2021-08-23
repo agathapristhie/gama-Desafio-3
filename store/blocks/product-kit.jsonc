@@ -1,5 +1,5 @@
 {
-    "product-kit": {
+    "product-kit": { //página padrão do product-kit
     "blocks": [
       "product-summary"
     ],
